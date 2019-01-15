@@ -1,0 +1,331 @@
+/* ==========================================================================
+    Few points to remeber for every CSS property
+    +++++++++++++++++++++++++++++++++++++++++++++++
+    • Default values for different elements
+    • Overriding & different values that can be given
+    • Inheritence
+    • Can they be applied to all elements
+    • Can they be animated
+   ========================================================================== */
+/*
+
+Background related style properties
++++++++++++++++++++++++++++++++++++++++++++
+
+~  background-color -
+    ^ default value transparent
+    ^ This property doesn't gets inherited
+    ^ This property can be applied to all elements
+    ^ You can animate
+~  background-image - url()
+    ^ default value none
+    ^ This property doesn't gets inherited
+    ^ This property can be applied to all elements
+    ^ You can animate
+
+~  background-repeat: repeat | no-repeat | repeat-x | repeat-y
+    ^ default value is repeat
+    ^ This property doesn't gets inherited
+    ^ This property can be applied to all elements
+    ^ You can't animate
+
+~  background-attachment- scroll | fixed
+    ^ default value is scroll
+    ^ This property doesn't gets inherited
+    ^ This property can be applied to all elements
+    ^ You can't animate
+
+~  background-position
+    values are specified in key words as x & y codordinates
+      for x - left center right
+      for y - top center bottom
+      you can also specify as length
+
+    ^ default value is left top - 0 0
+    ^ This property doesn't gets inherited
+    ^ This property can be applied to all elements
+    ^ You can't animate
+
+background [color image repeat attachment position]
+
+~  background-size – auto | contain | cover | -length-
+    ^ default value is auto
+    ^ This property doesn't gets inherited
+    ^ This property can be applied to all elements
+    ^ You can't animate
+
+
+
+
+Sprites - 
+background-origin – border-box, padding-box, content-box
+background-clip – 
+multiple backgrounds – CSS3
+Gradient Backgrounds – CSS3
+
+
+
+auto;
+inherit;
+
+Background related important links
++++++++++++++++++++++++++++++++++++++++++++
+
+https://developer.mozilla.org/en/docs/Web/CSS/background-color
+*/
+
+/* ==========================================================================
+   Demo of Background related properties
+   ========================================================================== */
+body {
+    background: aliceblue;
+}
+.one .two {
+background: yellow;
+border: 1px solid green;
+}
+.two {
+    position: relative;
+    top: -20p;
+    background: pink;
+}
+/* //////////////////////////////////// */
+.container{
+    width: 75%;
+    margin: auto;
+}
+.dabba {
+    background: #7dbbbd;
+    border: 10px solid red;
+    color: white;
+    min-height: 300px;
+}
+.bgimg {
+    background: yellow;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-rQDti6Q-ZrRLfBjINGSFdcYi80LBTG9l3GiWmHf_bjB8gCZB");
+    background-repeat: repeat-x;
+}
+.bgimg2 {
+    background: lightblue;
+    background-image: url("https://vignette.wikia.nocookie.net/animal-jam-clans-1/images/8/8d/Transparent-color-cubes-pattern-background.jpg/revision/latest?cb=20160830034311");
+    background-repeat: no-repeat;
+}
+.bgimg3 {
+    background: #eadfdf;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQlmpQ6_SgCx1KFK_PLXhgPnOu3I2slaLMjK7Y13uEHjcVHoPFG");
+    background-repeat: no-repeat;
+    background-position: right top;
+}
+.bgimg4 {
+    background: #e8c2cd;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSfpGcZfNOEMi5KxNb9tPlxzhY4BXZIFC8x1K4i1PbjjeFGnnJ");
+    background-repeat: no-repeat;
+    background-position: right bottom;
+}
+.bgimg5 {
+    background: #eadfdf;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-rQDti6Q-ZrRLfBjINGSFdcYi80LBTG9l3GiWmHf_bjB8gCZB");
+    background-repeat: no-repeat;
+    background-position: center center;
+}
+.bgimg6 {
+    background: #eadfdf;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-rQDti6Q-ZrRLfBjINGSFdcYi80LBTG9l3GiWmHf_bjB8gCZB");
+    background-repeat: no-repeat;
+    background-position: 50% ;
+}
+.bgimg7 {
+    background: #eadfdf;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-rQDti6Q-ZrRLfBjINGSFdcYi80LBTG9l3GiWmHf_bjB8gCZB");
+    background-repeat: no-repeat;
+    background-position: 100px 100px;
+}
+.bgimg8 {
+    background: #e0cedb;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-rQDti6Q-ZrRLfBjINGSFdcYi80LBTG9l3GiWmHf_bjB8gCZB");
+    background-repeat: no-repeat;
+    background-position: -50px -50px;
+}
+.bgimg9{
+    background: #938dce;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-rQDti6Q-ZrRLfBjINGSFdcYi80LBTG9l3GiWmHf_bjB8gCZB");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-repeat: repeat;
+}
+.bgimg10{
+    background: #c7e3f3 ;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRG93zwrL6dabKU6Uq3wAS_q4o1YKj977829KpWxaFHdW-Ileovpg");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-repeat: 0 0, repeat;
+    transform: all 250ms ease;
+}
+.bgimg10:hover{
+    background: #c7e3f3 ;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-rQDti6Q-ZrRLfBjINGSFdcYi80LBTG9l3GiWmHf_bjB8gCZB");
+    background-repeat: no-repeat;
+    background-position: 100% 100%;
+    background-repeat: 0 0, repeat;
+    transform: all 250ms ease;
+}
+.bgimg11{
+    background: #e4a1d0;
+    background-image: url("./img/flower.png");
+    background-repeat: no-repeat;
+    background-position: 0 0;
+    background-repeat: -50px -50px, repeat;
+}
+/* 
+//////////////////////////short hand property */
+.bgimg12{
+  
+
+    background: #c7e3f3  url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ54GFjg8SNXqW4bJa4TbEX0kEGJAWpJ5IWHtlukmJxBnGWTXf0") no-repeat scroll left center;
+}
+/* 
+////////////////////background attatchment */
+.cover{
+    border: 4px solid black;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ54GFjg8SNXqW4bJa4TbEX0kEGJAWpJ5IWHtlukmJxBnGWTXf0");
+    min-height: 300px;
+    background-attachment: fixed;
+}
+.cover2{
+    border: 4px solid black;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRSfpGcZfNOEMi5KxNb9tPlxzhY4BXZIFC8x1K4i1PbjjeFGnnJ");
+    min-height: 300px;
+    background-attachment: scroll;
+    background-size: 60% auto; 
+    background-repeat: no-repeat;
+}
+
+.bgimg13{
+    border: 14px solid pink;
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-rQDti6Q-ZrRLfBjINGSFdcYi80LBTG9l3GiWmHf_bjB8gCZB");
+    min-height: 300px;
+    background-repeat: no-repeat;
+    background-origin: content-box;
+    background-clip: padding-box;
+}
+.bgimg14{
+    border: 14px solid pink;
+   background-size: 100px;
+     border: 10px solid #0d5a5d;
+    background-image: url("http://pluspng.com/img-png/flower-png-flower-png-image-17956-700.png"), linear-gradient(#50efdc, #fd589b,yellow );
+}
+.bgimg15 {
+    background-image: url(""), url("");
+    padding: 20px;
+    background-attachment: scroll scroll fixed;
+}
+
+.my-sprites {
+    list-style: none;
+    margin: 30px 0;
+    border: 1px solid #DDD;
+    padding: 40px;
+
+}
+.my-sprites li {
+    margin-bottom: 30px;
+
+}
+.my-sprites li:before{
+    width: 25px;
+    height: 25px;
+    content: "";
+    background-image: url("https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcT-rQDti6Q-ZrRLfBjINGSFdcYi80LBTG9l3GiWmHf_bjB8gCZB");
+    border  : 1px solid red;
+    position: relative;
+    left: -10px;
+    border-radius: 50%;
+    top: -5px;
+    background-repeat: no-repeat;
+background-size: 250px auto;
+}
+/* h///////////////////here is assignment //////////////////// */
+.gallary-box{
+    border: 1px solid;
+    width: 80%;
+    margin: auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.assignment-heading{
+    text-align: center;
+    text-transform: uppercase;
+    background: #00bcc5;
+    color: white;
+}
+.image-and-text{
+    height: 300px;
+    width: 300px;
+    background: #e7ebef;
+    margin: 15px;
+    box-shadow: 5px 5px 2px lightblue;
+    border-radius: 6px;
+    
+}
+.image-and-text:hover{
+    box-shadow: 8px 8px 2px lightblue;
+}
+.imgdiv {
+    height: 180px;
+    width: 180px;
+    margin: auto;
+    position: relative;
+    top: 10%;
+}
+.imgdiv img:hover{
+
+    transform: scale(1.2);
+}
+.imgdiv2{
+    background-image: url(https://cdn-images-1.medium.com/max/1920/1*JSTSwAbHWIJFJUOTFC3sMw.jpeg);
+    background-size: 100% 100%;
+    border-radius: 50%;
+}
+.imgdiv::before{
+    content: "";
+    height: 60px;
+    width: 60px;
+    background: #00BCC5;
+    position: absolute;
+    border-radius: 50%;
+    left: -30%;
+}
+.imgdiv::after{
+    content: "";
+    height: 50px;
+    width: 50px;
+    background: #00BCC5;
+    position: absolute;
+    border-radius: 50%;
+    top: 14%;
+    left: -24%;
+}
+.imgdiv .dot {
+    height: 30px;
+    width: 30px;
+    background: #00BCC5;
+    position: absolute;
+    border-radius: 50%;
+    top: 33%;
+    left: -11%;
+    opacity: .5;
+}
+.imgdiv img {
+    height: 100%;
+    width: 100%;
+    border-radius: 50%;}
+.imgdiv p {
+    text-align: center;
+    background: crimson ;
+   box-shadow: 1px 1px 3px #02021d;
+   color: white;
+}
+.imgdiv p:hover{
+    box-shadow: 2px 2px 3px #02021d;
+}

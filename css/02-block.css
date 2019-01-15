@@ -1,0 +1,427 @@
+/* ==========================================================================
+    Few points to remeber for every CSS property
+    +++++++++++++++++++++++++++++++++++++++++++++++
+    • Default values for different elements
+    • Different values that can be given
+    • Inheritence
+    • Can they be applied to all elements
+    • Can they be animated
+   ========================================================================== */
+/*
+
+block related style properties
++++++++++++++++++++++++++++++++++++++++++++
+
+~  word-spacing: normal | <length>
+~  letter-spacing : normal | <length>
+    ^ default value is auto
+    ^ This property gets inherited
+    ^ This property can be applied to all the elements
+    ^ Can animate
+
+~  vertical-align : baseline | sub | super | text-top | text-bottom | middle | top | bottom | <percentage> | <length>
+    ^ default value is baseline
+    ^ This property doesn't gets inherited
+    ^ This property can be applied to very few elements, like img, input, td, tr, table
+    ^ you can animate
+https://developer.mozilla.org/en-US/docs/Web/CSS/vertical-align
+
+
+~  text-align : left | right | center | justify
+    ^ default value is left - depends on page direction
+    ^ This property gets inherited
+    ^ This property can be applied to all the elements
+    ^ Can't animate
+
+~  text-indent
+    ^ default value is auto
+    ^ This property gets inherited
+    ^ This property can be applied to block level elements
+    ^ Can't animate
+
+~  white-space: normal | pre | nowrap | pre-wrap | pre-line
+    ^ default value is auto
+    ^ This property gets inherited
+    ^ This property can be applied to block level elements
+    ^ Can't animate
+    https://developer.mozilla.org/en/docs/Web/CSS/white-space
+
+
+~  display: block | inline | inline-block | 
+            table | table-row | table-cell | 
+            list-item | none
+    ^ default value is auto
+    ^ This property doesn't gets inherited
+    ^ This property can be applied to all elements
+    ^ You can animate
+
+~  content – 
+~  text-overflow - clip | ellipsis 
+
+
+
+auto;
+inherit;
+
+*/
+
+
+
+
+/* ==========================================================================
+   Demo of Block related properties
+   ========================================================================== */
+
+   
+   .word-spacing-demo{
+       word-spacing: 10px;
+   }
+   .letter-spacing-demo{
+    letter-spacing: 10px;
+    }
+
+
+    .va-demo{
+        vertical-align: top;
+    }
+    .va-demo2{
+        vertical-align: super;
+    }
+    .va-demo3{
+        vertical-align: sub;
+    }    
+    .va-demo4{
+        vertical-align: middle;
+    }
+
+    .ta-demo,
+    .ta-demo1,
+    .ta-demo2,
+    .ta-demo3,
+    .ta-demo4{
+        border: 1px solid #000;
+        padding: 10px;
+    }
+    .ta-demo1{
+        padding: 10px;
+    }
+    .ta-demo2{
+        padding: 10px;
+    }
+    .ta-demo3{
+        padding: 10px;
+    }
+    .ta-demo4{
+        padding: 10px;
+    }
+
+
+
+.ti-demo{
+    text-indent: 20px;
+}
+
+
+
+
+.ws-demo{
+    white-space: pre;
+}
+.ws-demo-nowrap{
+    white-space: nowrap;
+}
+
+
+.ws-demo-pre-wrap{
+    white-space: pre-wrap;
+}
+
+.ws-demo-pre-line{
+    white-space: pre-line;
+}
+
+.profile-box{
+    width: 200px;
+    padding: 20px;
+    border-radius: 10px;
+    background-color: lightblue;
+    margin-left: auto;
+    margin-right: auto;
+    text-align: center;
+}
+.profile-box img{
+    border-radius: 50%;
+}
+.profile-box h2{
+    word-wrap: break-word;
+}
+
+.bx{
+    border: 1px solid #000;
+}
+
+.display-demo1{
+    display: inline;
+}
+.display-demo2{
+    display: block;
+}
+
+.linkz{
+    list-style: none;
+    margin: 50px 0 25px;
+    padding: 0 0 0 10px;
+    border-bottom: 4px solid hotpink;
+}
+
+.linkz > li > a{
+    border: 1px solid hotpink;
+    display: block;
+    padding: 5px 10px;
+    background: green;
+    position: relative;
+    color: white;
+    text-decoration: none;
+    border-radius: 10px 10px 0 0;
+}
+.linkz > li.active > a{
+    padding-top: 10px;
+    background:  green;
+}
+.linkz > li.has-submenu > a {
+    padding-left: 10px;
+}
+.linkz > li.has-submenu > a:after{
+    content: "";
+    width: 8px;
+    height: 8px;
+    position: absolute;
+    top: 8px;
+    right: 10px;
+    transform: rotate(45deg);
+    border-bottom: 4px solid red;
+    border-right:   4px solid red;
+
+ 
+}
+
+.linkz > li{
+    border: 1px solid #000;
+    display: inline-block;
+    position: relative;
+    border: none;
+}
+.linkz > li > a:hover {
+    background: yellow;
+}
+.sub-menu{
+    position: absolute;
+    border: 1px solid rgba(69, 214, 2, 0.89);
+    background-color: #fff;
+    top: 20px;
+    left: 0;
+    padding-left: 0;
+    display: none;
+}
+.linkz > li:hover .sub-menu{
+    display: block;
+}
+
+.sub-menu li{
+    padding: 4px
+}
+.sub-menu li a{
+    padding: 4px;
+    background-color: rgb(3, 94, 3);
+    color: #FFF;
+    text-decoration: none;
+}
+
+.display-inline-demo{
+    width: 300px;
+    display: inline-block;
+}
+/* ///////////////////////////////////////content-demo */
+.content-demo {
+    border: 1px solid #ccc;
+    border-radius: 10px;
+    background: lightblue;
+    padding: 20px 40px;
+    
+    counter-reset: my-sec-counter;
+}
+.content-demo li::before{
+    counter-increment: my-sec-counter;
+    content: "Section " counter(my-sec-counter) ". ";
+
+}
+.sub-section {
+    
+    counter-reset: subsection;
+  }
+  .sub-section > li::before {
+    counter-increment: subsection;
+    content: counter(section) "." counter(subsection) " ";
+    
+  }
+  /* //////////assignment code here */
+   .main-container {
+    
+    display: flex;
+    background: cyan;
+   
+   }
+    .iPhone{
+        list-style: none;
+        margin: 20px;
+        padding: 0;
+        width: 135px;
+        position: relative;
+    }
+    .iPhone > li > a{
+        display: block;
+        padding: 30px;
+        background-color: #ff7f15;
+        border: 1px solid #FFF;
+        color: #FFF;
+        text-decoration: none;
+        margin-top: 6px;
+        padding-bottom: 50px;
+        width: 73px;
+    
+    }
+    .iPhone > li >a::before{
+        content: "";
+        width: 0;
+        height: 100px;
+    }
+
+    .iPhone > li.active > a{
+        background-color: #5c007a;
+    }
+    .iPhone > li.active > a:after{
+        content: "";
+        width: 8px;
+        height: 8px;
+        position: absolute;
+        top: 27px;
+        right: -6px;
+        border-bottom: 1px solid #FFF;    
+        border-right: 1px solid #FFF; 
+        transform: rotate(-45deg);
+        z-index: 100;
+    }
+    .iPhone > li > a:hover:before{
+         transition: width 1s;   
+        content: "";
+        width: 100%;
+        background: #8343f0;
+        border-radius: 0px 10px 10px 0px; 
+     
+    }
+    .iPhone .submenu{
+        position: absolute;
+        border: 1px solid rgba(69, 214, 2, 0.89);
+        background-color: #fff;
+        top: 0;
+        left: 150px;
+        padding-left: 0;
+        display: none;
+        width: 500px;
+        height: 450px;
+    
+    }
+    .iPhone .submenu img{
+        height: 100%;
+        width: 100%;
+    }
+
+    .iPhone > li:hover .submenu{
+        display: block;
+    }
+    .iPhone > li.active .submenu{
+        display: block;
+    }
+    
+    .iPhone .submenu img{
+        display: block;
+    }
+   /* 
+  
+
+      
+  }
+ 
+  .button-section button::after{
+      content: "";
+     width: 10px;
+      height: 10px;
+      position: absolute;
+      transform: rotate(-45deg);
+      border-bottom: 6px solid violet;
+      border-right: 8px solid violet;
+      right: -5px;
+      z-index: 1;
+  }
+  .button-section button::before{
+      content: "";
+      position: absolute;
+      top: 0;
+      bottom: 0;
+      left: 0;
+      right: 0;
+      width: 0%;
+  }
+  .button-section button:hover::before {
+    transition: width 1s;
+    content: "";
+    width: 100%;
+    background: #8343f0;
+    border-radius: 0px 10px 10px 0px;
+    z-index: -1;
+  }
+  .button-section button:hover:after {
+      content: "";
+      transition: all 0.2s;
+      transition-delay: 0.70s;
+    border-bottom: 6px solid #8343f0;
+      border-right: 8px solid #8343f0;
+}
+.iphone1:hover 
+  .image {
+    
+    width: 78%;
+    height: 415px;
+  }
+  .image img {
+      height: 100%;
+      width: 100%;
+  } */
+/* /////////////////////////////////// */
+
+.widget{
+	min-width: 300px;
+	max-width: 450px;
+	margin: 20px auto 20px auto;
+	border-radius: 10px;
+
+	background-color: #8343f0;
+}
+.widget h1{
+	background-color: rgba(0,0,0,.2);
+	margin: 0 0 20px;
+	color: #FFF;
+	padding: 15px 20px;
+	border-radius: 10px 10px 0 0;
+}
+.widget p{
+	color: #FFF;
+	padding: 15px 20px;
+}
+.widget footer{
+	background-color: rgba(255,255,255,.2);
+	color: #FFF;
+	padding: 15px 20px;
+	border-radius: 0 0 10px 10px;
+}
+

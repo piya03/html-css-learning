@@ -1,0 +1,450 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <title>CSS Journey - Learning style by styling</title>
+    <meta name="description" content="" />
+    <meta name="keywords" content="" />
+    <link rel="shortcut icon" href="favicon.ico" type="image/x-icon" />
+
+    <link
+          href="https://fonts.googleapis.com/css?family=Unlock"
+      rel="stylesheet"
+    />
+
+    <link
+      href="https://fonts.googleapis.com/css?family=Noto+Serif+SC:400,700|Roboto:300,400"
+      rel="stylesheet"
+    />
+
+    <link rel="stylesheet" href="css/common.css" />
+    <link rel="stylesheet" href="css/02-block.css" />
+  </head>
+  <body dir="ltr">
+    <!-- This is a comment -->
+    <header class="page-header">
+      <h1>
+        <a href="index.html"
+          >CSS Journey <small>Learning style by styling</small></a
+        >
+      </h1>
+      <nav>
+        <ul class="main-nav">
+          <li><a href="01-type.html">Type</a></li>
+          <li><a href="02-block.html">Block</a></li>
+          <li><a href="03-list.html">List</a></li>
+          <li><a href="04-backgrounds.html">Background</a></li>
+          <li><a href="05-border.html">Border</a></li>
+          <li><a href="06-box.html">Box</a></li>
+          <li><a href="07-position.html">Position</a></li>
+          <li><a href="08-at-rules.html">@rules</a></li>
+          <li><a href="09-font-icons.html">Font Icons</a></li>
+          <li><a href="10-animations.html">Animations</a></li>
+          <li><a href="11-flex.html">Flex</a></li>
+          <li><a href="12-grids.html">Grids</a></li>
+          <li>
+            <a href="13-audio-video-images.html">Video, Audio & Images</a>
+          </li>
+          <li><a href="14-canvas.html">Canvas</a></li>
+          <li><a href="15-tables.html">Tables</a></li>
+          <li><a href="16-emails.html">Emails</a></li>
+          <li><a href="17-forms.html">Forms</a></li>
+          <li><a href="18-psd-to-html.html">PSD to HTML</a></li>
+        </ul>
+      </nav>
+    </header>
+    <section>
+      <div class="demo-wrap">
+        <h2 class="-title">word-spacing: <small>&lt;length &gt;</small></h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum
+          dolor delectus assumenda quisquam? Laboriosam cumque ut, sapiente
+          reiciendis eveniet facilis dolorem minus quo cupiditate aut sed, quos
+          sint provident magni?
+        </p>
+        <p class="word-spacing-demo">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem,
+          laboriosam obcaecati voluptatum ipsam corrupti ipsa laudantium hic
+          animi autem molestias eos et odit temporibus deserunt facere
+          exercitationem velit sapiente repellat?
+        </p>
+
+        <hr />
+        <h2 class="-title">letter-spacing: <small>&lt;length &gt;</small></h2>
+        <p>
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Nostrum
+          dolor delectus assumenda quisquam? Laboriosam cumque ut, sapiente
+          reiciendis eveniet facilis dolorem minus quo cupiditate aut sed, quos
+          sint provident magni?
+        </p>
+        <p class="letter-spacing-demo">
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Dolorem,
+          laboriosam obcaecati voluptatum ipsam corrupti ipsa laudantium hic
+          animi autem molestias eos et odit temporibus deserunt facere
+          exercitationem velit sapiente repellat?
+        </p>
+
+        <hr />
+        <h2 class="-title">
+          vertical-align :
+          <small
+            >baseline | sub | super | text-top | text-bottom | middle | top |
+            bottom | &lt;percentage&gt; | &lt;length&gt;</small
+          >
+        </h2>
+        <p>
+          <img src="https://fakeimg.pl/100x100/b743e4" class="va-demo" /> this
+          is a text
+        </p>
+        <p>
+          Lorem ipsum dolor <span class="va-demo2">sit amet</span> consectetur
+          adipisicing elit. Ad, obcaecati
+          <span class="va-demo3">laudantium</span> totam officia error, fuga ut
+          earum repellat aspernatur, expedita voluptas excepturi pariatur.
+          Voluptas sapiente odio tenetur culpa nihil molestias.
+        </p>
+
+        <div>
+          <input type="checkbox" name="asd" id="asd" class="va-demo4" />
+          <label for="asd">Select this</label>
+        </div>
+
+        <h2 class="-title">
+          text-align : <small>left | right | center | justify</small>
+        </h2>
+
+        <p class="ta-demo">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        </p>
+        <p class="ta-demo1">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        </p>
+        <p class="ta-demo2">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        </p>
+        <p class="ta-demo3">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit.
+        </p>
+        <p class="ta-demo4">
+          Lorem ipsum, dolor sit amet consectetur adipisicing elit. Lorem ipsum
+          dolor sit amet consectetur adipisicing elit. Iste ipsum quo amet
+          architecto libero dignissimos enim voluptas animi, earum aliquam, id
+          illum nisi repellendus officiis. Beatae velit culpa dolorem similique.
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Sit
+          voluptatum deserunt fugiat nesciunt eum voluptate possimus, modi vero
+          at dicta deleniti optio natus doloribus! Vitae tempore suscipit
+          consequatur aliquam enim. Lorem ipsum, dolor sit amet consectetur
+          adipisicing elit. Lorem ipsum dolor sit amet consectetur adipisicing
+          elit. Iste ipsum quo amet architecto libero dignissimos enim voluptas
+          animi, earum aliquam, id illum nisi repellendus officiis. Beatae velit
+          culpa dolorem similique. Lorem ipsum dolor sit amet consectetur
+          adipisicing elit. Sit voluptatum deserunt fugiat nesciunt eum
+          voluptate possimus, modi vero at dicta deleniti optio natus doloribus!
+          Vitae tempore suscipit consequatur aliquam enim.
+        </p>
+
+        <h2 class="-title">text-indent : <small>&lt;length&gt;</small></h2>
+        <div class="ti-demo">
+          Lorem ipsum dolor, sit amet consectetur adipisicing elit. Illum
+          numquam laudantium, blanditiis id eaque at mollitia sapiente ut, nam
+          porro odit ea et illo hic nostrum quo enim. Veritatis, impedit. Lorem
+          ipsum dolor sit amet consectetur adipisicing elit. Dolorum rerum quod
+          reiciendis assumenda excepturi similique quis ad, voluptas, dolores
+          enim magni libero. Veniam, et ut accusamus nobis ratione beatae ea?
+          <p>
+            Lorem ipsum dolor sit, amet consectetur adipisicing elit. Iure
+            deserunt eaque velit nostrum magnam rerum doloremque voluptatum
+            nesciunt explicabo ullam aperiam, rem doloribus consequuntur ipsa
+            odit cum ratione, iste vel. Lorem ipsum dolor sit amet consectetur
+            adipisicing elit. Perferendis aut quaerat quam rem voluptates esse
+            unde dolores cumque, vel aliquam veniam maiores, molestiae nulla
+            ratione minima iure, repudiandae laboriosam laudantium!
+          </p>
+        </div>
+        <ul>
+          <li><a href="#">Facebook</a></li>
+          <li><a href="#">Linkedin</a></li>
+          <li><a href="#">Twitter</a></li>
+        </ul>
+
+        <h2 class="-title">
+          white-space :
+          <small>normal | pre | nowrap | pre-wrap | pre-line</small>
+        </h2>
+
+        <p>White space demo - default</p>
+        <div>
+          This is in English ಗರ್ಭದಿ ನನ್ನಿರಿಸಿ ಊರಲಿ ನಡೆಯುತಿರೆ ಥೇರಲಿ ಕುಳಿತಂತೆ ಅಮ್ಮ
+          ಗುಮ್ಮ ಬಂತೆನಿಸಿ ಹೆದರಿ ನಿಂತಾಗ ನಿನ್ನ ಸೆರಗೇ ಕಾವಲು ಅಮ್ಮ ಕಾಣದ ದೇವರಿಗೆ ಕೈಯ ನಾ
+          ಮುಗಿಯೆ ನಿನಗೆ ನನ್ನುಸಿರೆ ಆರತಿ ತಂದಾನಿ ನಾನೆ ತಾನಿತಂದಾನೊ ತಾನೆ ನಾನೆ ನೊ ತಂದಾನಿ
+          ನಾನೆ ತಾನಿತಂದಾನೊ ತಾನೆ ನಾನೆ ನೊ ನೆರೆ ಬಂದ ಊರಲಿ ಸೆರೆ ಸಿಕ್ಕ ಮೂಕರ ಕಂಡ ಕನಸೆ
+          ಕಣ್ಣ ಹಂಗಿಸಿದೆ ನೆತ್ತರ ಹರಿದರು ನೆಮ್ಮದಿ ಕಾಣಾದ ಭಯವ ನೀಗುವ ಕೈ ಬೇಕಾಗಿದೆ ಕಾಣದ
+          ದೇವರನು ನಿನ್ನಲಿ ಕಂಡಿರುವೆ ನೀನೆ ಭರವಸೆಯು ನಾಳೆಗೆ
+        </div>
+        <p>White space demo - &lt;pre&gt; tag</p>
+        <pre>
+          This is in English
+          ಗರ್ಭದಿ ನನ್ನಿರಿಸಿ 
+          ಊರಲಿ ನಡೆಯುತಿರೆ 
+          ಥೇರಲಿ ಕುಳಿತಂತೆ ಅಮ್ಮ 
+          ಗುಮ್ಮ ಬಂತೆನಿಸಿ ಹೆದರಿ ನಿಂತಾಗ 
+          ನಿನ್ನ ಸೆರಗೇ ಕಾವಲು ಅಮ್ಮ 
+          ಕಾಣದ ದೇವರಿಗೆ ಕೈಯ ನಾ ಮುಗಿಯೆ 
+          ನಿನಗೆ ನನ್ನುಸಿರೆ ಆರತಿ 
+          ತಂದಾನಿ ನಾನೆ ತಾನಿತಂದಾನೊ 
+          ತಾನೆ ನಾನೆ ನೊ 
+          ತಂದಾನಿ ನಾನೆ ತಾನಿತಂದಾನೊ 
+          ತಾನೆ ನಾನೆ ನೊ 
+          
+          ನೆರೆ ಬಂದ ಊರಲಿ 
+          ಸೆರೆ ಸಿಕ್ಕ ಮೂಕರ 
+          ಕಂಡ ಕನಸೆ ಕಣ್ಣ ಹಂಗಿಸಿದೆ 
+          ನೆತ್ತರ ಹರಿದರು 
+          ನೆಮ್ಮದಿ ಕಾಣಾದ 
+          ಭಯವ ನೀಗುವ ಕೈ ಬೇಕಾಗಿದೆ 
+          ಕಾಣದ ದೇವರನು 
+          ನಿನ್ನಲಿ ಕಂಡಿರುವೆ 
+          ನೀನೆ ಭರವಸೆಯು ನಾಳೆಗೆ 
+        </pre>
+
+        <p>White space demo - white-space:pre</p>
+        <div class="ws-demo">
+          This is in English ಗರ್ಭದಿ ನನ್ನಿರಿಸಿ ಊರಲಿ ನಡೆಯುತಿರೆ ಥೇರಲಿ ಕುಳಿತಂತೆ ಅಮ್ಮ
+          ಗುಮ್ಮ ಬಂತೆನಿಸಿ ಹೆದರಿ ನಿಂತಾಗ ನಿನ್ನ ಸೆರಗೇ ಕಾವಲು ಅಮ್ಮ ಕಾಣದ ದೇವರಿಗೆ ಕೈಯ ನಾ
+          ಮುಗಿಯೆ ನಿನಗೆ ನನ್ನುಸಿರೆ ಆರತಿ ತಂದಾನಿ ನಾನೆ ತಾನಿತಂದಾನೊ ತಾನೆ ನಾನೆ ನೊ ತಂದಾನಿ
+          ನಾನೆ ತಾನಿತಂದಾನೊ ತಾನೆ ನಾನೆ ನೊ ನೆರೆ ಬಂದ ಊರಲಿ ಸೆರೆ ಸಿಕ್ಕ ಮೂಕರ ಕಂಡ ಕನಸೆ
+          ಕಣ್ಣ ಹಂಗಿಸಿದೆ ನೆತ್ತರ ಹರಿದರು ನೆಮ್ಮದಿ ಕಾಣಾದ ಭಯವ ನೀಗುವ ಕೈ ಬೇಕಾಗಿದೆ ಕಾಣದ
+          ದೇವರನು ನಿನ್ನಲಿ ಕಂಡಿರುವೆ ನೀನೆ ಭರವಸೆಯು ನಾಳೆಗೆ
+        </div>
+        <p>White space demo - white-space:nowrap</p>
+        <div class="ws-demo-nowrap">
+          This is in English ಗರ್ಭದಿ ನನ್ನಿರಿಸಿ ಊರಲಿ ನಡೆಯುತಿರೆ ಥೇರಲಿ ಕುಳಿತಂತೆ ಅಮ್ಮ
+          ಗುಮ್ಮ ಬಂತೆನಿಸಿ ಹೆದರಿ ನಿಂತಾಗ ನಿನ್ನ ಸೆರಗೇ ಕಾವಲು ಅಮ್ಮ ಕಾಣದ ದೇವರಿಗೆ ಕೈಯ ನಾ
+          ಮುಗಿಯೆ ನಿನಗೆ ನನ್ನುಸಿರೆ ಆರತಿ ತಂದಾನಿ ನಾನೆ ತಾನಿತಂದಾನೊ ತಾನೆ ನಾನೆ ನೊ ತಂದಾನಿ
+          ನಾನೆ ತಾನಿತಂದಾನೊ ತಾನೆ ನಾನೆ ನೊ Lorem ipsum dolor, sit amet consectetur
+          adipisicing elit. Tempora culpa ipsa, laboriosam adipisci accusantium
+          illum debitis optio maxime hic sit est reiciendis ullam, consequatur
+          dolor eligendi incidunt! Temporibus, reiciendis explicabo. Lorem ipsum
+          dolor, sit amet consectetur adipisicing elit. Sit tempora ab iure
+          exercitationem fuga quaerat quidem perspiciatis. Mollitia, adipisci
+          cumque dolorum, recusandae iusto nemo consectetur, cupiditate quam a
+          officiis soluta.
+        </div>
+
+        <p>White space demo - white-space:pre-wrap</p>
+        <div class="ws-demo-pre-wrap">
+          This is in English ಗರ್ಭದಿ ನನ್ನಿರಿಸಿ ಊರಲಿ ನಡೆಯುತಿರೆ ಥೇರಲಿ ಕುಳಿತಂತೆ ಅಮ್ಮ
+          ಗುಮ್ಮ ಬಂತೆನಿಸಿ ಹೆದರಿ ನಿಂತಾಗ ನಿನ್ನ ಸೆರಗೇ ಕಾವಲು ಅಮ್ಮ ಕಾಣದ ದೇವರಿಗೆ ಕೈಯ ನಾ
+          ಮುಗಿಯೆ ನಿನಗೆ ನನ್ನುಸಿರೆ ಆರತಿ ತಂದಾನಿ ನಾನೆ ತಾನಿತಂದಾನೊ ತಾನೆ ನಾನೆ ನೊ ತಂದಾನಿ
+          ನಾನೆ ತಾನಿತಂದಾನೊ ತಾನೆ ನಾನೆ ನೊ Lorem ipsum dolor, sit amet consectetur
+          adipisicing elit. Tempora culpa ipsa, laboriosam adipisci accusantium
+          illum debitis optio maxime hic sit est reiciendis ullam, consequatur
+          dolor eligendi incidunt! Temporibus, reiciendis explicabo. Lorem ipsum
+          dolor, sit amet consectetur adipisicing elit. Sit tempora ab iure
+          exercitationem fuga quaerat quidem perspiciatis. Mollitia, adipisci
+          cumque dolorum, recusandae iusto nemo consectetur, cupiditate quam a
+          officiis soluta.
+        </div>
+
+        <p>White space demo - white-space:pre-line</p>
+        <div class="ws-demo-pre-line">
+          This is in English ಗರ್ಭದಿ ನನ್ನಿರಿಸಿ ಊರಲಿ ನಡೆಯುತಿರೆ ಥೇರಲಿ ಕುಳಿತಂತೆ ಅಮ್ಮ
+          ಗುಮ್ಮ ಬಂತೆನಿಸಿ ಹೆದರಿ ನಿಂತಾಗ ನಿನ್ನ ಸೆರಗೇ ಕಾವಲು ಅಮ್ಮ ಕಾಣದ ದೇವರಿಗೆ ಕೈಯ ನಾ
+          ಮುಗಿಯೆ ನಿನಗೆ ನನ್ನುಸಿರೆ ಆರತಿ ತಂದಾನಿ ನಾನೆ ತಾನಿತಂದಾನೊ ತಾನೆ ನಾನೆ ನೊ ತಂದಾನಿ
+          ನಾನೆ ತಾನಿತಂದಾನೊ ತಾನೆ ನಾನೆ ನೊ Lorem ipsum dolor, sit amet consectetur
+          adipisicing elit. Tempora culpa ipsa, laboriosam adipisci accusantium
+          illum debitis optio maxime hic sit est reiciendis ullam, consequatur
+          dolor eligendi incidunt! Temporibus, reiciendis explicabo. Lorem ipsum
+          dolor, sit amet consectetur adipisicing elit. Sit tempora ab iure
+          exercitationem fuga quaerat quidem perspiciatis. Mollitia, adipisci
+          cumque dolorum, recusandae iusto nemo consectetur, cupiditate quam a
+          officiis soluta.
+        </div>
+
+        <div class="profile-box">
+          <img src="https://fakeimg.pl/100x100/ea6d3a" />
+          <h2>thisnameisverybiganditgoesonforever</h2>
+          <h3>thisnameisverybiganditgoesonforever</h3>
+        </div>
+
+        <hr />
+        <hr />
+        <hr />
+        <h2 class="-title">
+          display :
+          <small
+            >block | inline | inline-block | table | table-row | table-cell |
+            list-item | none</small
+          >
+        </h2>
+
+        <div class="bx display-demo1">This is div, a block level element</div>
+        <div class="bx display-demo1">This is div, a block level element</div>
+        <p class="bx display-demo1">This is p, a block level element</p>
+
+        <span class="bx display-demo2">This is span, an inline element</span>
+
+        <ul class="linkz">
+          <li class="active"><a href="#">link 01</a></li>
+          <li><a href="#">link 02</a></li>
+          <li class="has-submenu">
+            <a href="#">link 03 has sub menu</a>
+            <ul class="sub-menu">
+              <li><a href="#">Sub menu 01</a></li>
+              <li><a href="#">Sub menu 02</a></li>
+              <li><a href="#">Sub menu 03</a></li>
+              <li><a href="#">Sub menu 04</a></li>
+            </ul>
+          </li>
+          <li><a href="#">link 04</a></li>
+          <li><a href="#">link 05</a></li>
+          <li><a href="#">link 06</a></li>
+        </ul>
+
+        /////////////////////////
+        <ul class="linkz1">
+          <li class="active"><a href="#">link 01</a></li>
+          <li><a href="#">link 02</a></li>
+          <li class="has-submenu">
+            <a href="#">link 03 has sub menu</a>
+            <ul class="sub-menu">
+              <li><a href="#">Sub menu 01</a></li>
+              <li><a href="#">Sub menu 02</a></li>
+              <li><a href="#">Sub menu 03</a></li>
+              <li><a href="#">Sub menu 04</a></li>
+            </ul>
+          </li>
+          <li><a href="#">link 04</a></li>
+          <li><a href="#">link 05</a></li>
+          <li><a href="#">link 06</a></li>
+        </ul>
+
+        <h3>Inline Block</h3>
+        <span class="bx display-inline-demo">This is span, inline element</span>
+
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora
+          recusandae voluptatem cumque itaque laborum eveniet fugit at vitae
+          veritatis, exercitationem iste consequatur asperiores? Ducimus illum
+          quo repellendus? Temporibus, voluptatum beatae.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora
+          recusandae voluptatem cumque itaque laborum eveniet fugit at vitae
+          veritatis, exercitationem iste consequatur asperiores? Ducimus illum
+          quo repellendus? Temporibus, voluptatum beatae.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora
+          recusandae voluptatem cumque itaque laborum eveniet fugit at vitae
+          veritatis, exercitationem iste consequatur asperiores? Ducimus illum
+          quo repellendus? Temporibus, voluptatum beatae.
+        </p>
+        <p>
+          Lorem ipsum dolor sit amet consectetur, adipisicing elit. Tempora
+          recusandae voluptatem cumque itaque laborum eveniet fugit at vitae
+          veritatis, exercitationem iste consequatur asperiores? Ducimus illum
+          quo repellendus? Temporibus, voluptatum beatae.
+        </p>
+      </div>
+
+      <hr />
+      <hr />
+
+      <hr />
+      <h2 class="title">content :</h2>
+      <ul class="content-demo">
+        <li>Introduction</li>
+        <li>HTml</li>
+        <li class="od">
+          css
+          <ul class="sub-section">
+            <li>font</li>
+            <li>block</li>
+            <li>flex</li>
+            <li>grid</li>
+            <li>table</li>
+          </ul>
+        </li>
+        <li>Javascript</li>
+        <li>P.H.P</li>
+      </ul>
+      <hr />
+      <hr />
+
+      <!-- <div class="main-contaner">
+  <div class="button-section">
+    <button class="iphone1">iPhone X</button>
+    <button class = "iphone2">iPhone XS</button>
+    <button class = "iphone3">iPhone XR</button>
+    <button class = "iphone4">iPhone 8</button>
+  </div>
+  <div class="image">
+    <!~~ <img src="https://drop.ndtv.com/TECH/product_database/images/3222016120930AM_635_apple_iphone_se.jpeg" alt="">
+    <img src="https://cdn.macworld.co.uk/cmsdata/reviews/3684095/iphone-xr-vs-iphone-8-plus_thumb1200_4-3.jpg" alt="">
+    <img src="https://static.toiimg.com/photo/65786824/Apple-iPhone-XR.jpg" alt="">
+    <img src="https://images-na.ssl-images-amazon.com/images/I/71mJ42vEDBL._SL1500_.jpg" alt=""> ~~>
+  </div>
+</div> -->
+      <hr />
+      ///////////////////////////////
+    
+<div class="main-container">
+    <ul class="iPhone">
+        <li class="active">
+          <a href="#">iPhone 8</a>
+          <div class="submenu">
+            <img src="https://drop.ndtv.com/TECH/product_database/images/3222016120930AM_635_apple_iphone_se.jpeg">
+          </div>
+        </li>
+        <li>
+          <a href="#">iPhone X</a>
+          <div class="submenu">
+            <img src="https://cdn.macworld.co.uk/cmsdata/reviews/3684095/iphone-xr-vs-iphone-8-plus_thumb1200_4-3.jpg">
+          </div>
+        </li>
+        <li>
+          <a href="#">iPhone XR</a>
+          <div class="submenu">
+            <img src="https://static.toiimg.com/photo/65786824/Apple-iPhone-XR.jpg">
+          </div>
+        </li>
+        <li>
+          <a href="#">iPhone XS</a>
+          <div class="submenu">
+            <img src="https://images-na.ssl-images-amazon.com/images/I/71mJ42vEDBL._SL1500_.jpg">
+          </div>
+        </li>
+        
+      </ul>
+</div>
+
+        <!-- <div class="image">
+    <img src="https://drop.ndtv.com/TECH/product_database/images/3222016120930AM_635_apple_iphone_se.jpeg" alt="">
+    <img src="" alt="">
+    <img src="" alt="">
+    <img src="" alt="">
+  </div> -->
+      </div>
+      <h2 class="title">text overflow</h2>
+      <div class="widget">
+        <h1>This is title</h1>
+        <p>
+          Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat odio
+          nulla voluptas a accusantium doloribus possimus, nisi, amet fugit
+          nesciunt ratione, sapiente placeat accusamus repudiandae iusto quas
+          eligendi rem recusandae!
+        </p>
+        <footer>call us</footer>
+      </div>
+    </section>
+
+    <footer class="page-footer">
+      <p>
+        &copy; 2019, all rights reserved, <a href="https://www.htmlden.com"></a>
+      </p>
+    </footer>
+  </body>
+</html>
